@@ -53,7 +53,7 @@ def records():
 @app.route('/options' , methods = ['POST', 'GET'])
 def options():
    con = sql.connect("database.db")
-   mc = memcache.Client(['kevin.hnglw0.cfg.use2.cache.amazonaws.com:11211'], debug=0)
+   mc = memcached.Client(['kevin.hnglw0.cfg.use2.cache.amazonaws.com:11211'], debug=0)
    start_time = time.time()
    num =int(request.form['num'])
    rows = []
