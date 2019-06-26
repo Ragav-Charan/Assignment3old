@@ -7,7 +7,7 @@ import time
 import random
 import memcached
 
-r = memcached.Client(['kevin.hnglw0.cfg.use2.cache.amazonaws.com:11211'], debug=0)
+
 #conn = sqlite3.connect('database.db')
 # print("Opened database successfully")
 #conn.execute('drop table earthquake')
